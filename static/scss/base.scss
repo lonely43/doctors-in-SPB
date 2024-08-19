@@ -1,0 +1,45 @@
+@import "../fonts/stylesheet.css"; // fonts
+
+$size-h1: 26px;
+$size-h2: 23px;
+$size-name: 14px;
+$size-undertitle: 0.8em;
+$size-link: 12px;
+$size-text: 14px;
+$size-title: 18px;
+
+$text: #202122; 
+
+$purple-gradient1: #E38DDD;
+$purple-gradient2: #9571F6;
+
+$yellow-gradient1: #FFC444;
+$yellow-gradient2: #F36F56;
+
+$white: #FFFFFF;
+$primary: #6165D7;
+$primary-dark: #2213ac;
+$gray-dark: #353535;
+
+.primary-btn{
+   margin-top: 2rem;
+   padding: .8rem 2rem;
+
+   border-radius: 6px;
+   border: none;
+
+   cursor: pointer;
+
+   text-align: center;
+   font-size: $size-undertitle;
+   font-weight: 500;
+
+   color: $white;
+   background-color: $primary;
+
+   transition: all 0.2s;
+
+   &:hover{
+      opacity: .8;
+   }
+}
