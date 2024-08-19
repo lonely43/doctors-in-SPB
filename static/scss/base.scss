@@ -1,13 +1,17 @@
 @import "../fonts/stylesheet.css"; // fonts
 
-$size-h1: 26px;
-$size-h2: 23px;
-$size-name: 14px;
-$size-undertitle: 0.8em;
+// font sizes
+$size-h1: 2.6em;
+$size-h2: 1.8em;
+$size-h3: 1.2em;
+$size-name: 1em;
+$size-undertitle: 12px;
 $size-link: 12px;
-$size-text: 14px;
+$size-text: 1em;
 $size-title: 18px;
 
+
+// UI colors
 $text: #202122; 
 
 $purple-gradient1: #E38DDD;
@@ -17,10 +21,14 @@ $yellow-gradient1: #FFC444;
 $yellow-gradient2: #F36F56;
 
 $white: #FFFFFF;
+
 $primary: #6165D7;
 $primary-dark: #2213ac;
+
 $gray-dark: #353535;
 
+
+// components
 .primary-btn{
    margin-top: 2rem;
    padding: .8rem 2rem;
@@ -31,7 +39,7 @@ $gray-dark: #353535;
    cursor: pointer;
 
    text-align: center;
-   font-size: $size-undertitle;
+   font-size: $size-text;
    font-weight: 500;
 
    color: $white;
@@ -42,4 +50,21 @@ $gray-dark: #353535;
    &:hover{
       opacity: .8;
    }
+}
+
+h1{
+   font-weight: 500;
+   font-size: $size-h1;
+}
+h2{
+   font-weight: 500;
+   font-size: $size-h2;
+}
+h3{
+   font-weight: 500;
+   font-size: $size-h3;
+}
+p{
+   font-size: $size-text;
+   font-weight: 400;
 }

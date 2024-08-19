@@ -12,3 +12,15 @@
    color: $text;
    font-family: 'Graphik LCG', 'sans-serif';
 }
+
+
+@media screen and (max-width: 390px) {
+   html{
+      font-size: 0.8em;
+   }
+}
+@media screen and (max-width: 300px) {
+   html{
+      word-break: break-all;
+   }
+}

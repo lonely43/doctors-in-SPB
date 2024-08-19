@@ -1,3 +1,39 @@
+@import "../fonts/stylesheet.css";
+.primary-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #6165D7;
+  transition: all 0.2s;
+}
+.primary-btn:hover {
+  opacity: 0.8;
+}
 
+h1 {
+  font-weight: 500;
+  font-size: 2.6em;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.8em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=list.css.map */
