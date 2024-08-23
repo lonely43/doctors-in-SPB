@@ -1,7 +1,13 @@
 @import "../fonts/stylesheet.css";
+.bound {
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+}
+
 .primary-btn {
-  margin-top: 2rem;
-  padding: 0.8rem 2rem;
+  width: fit-content;
+  padding: 0.8rem 1.4rem;
   border-radius: 6px;
   border: none;
   cursor: pointer;
@@ -34,6 +40,135 @@ h3 {
 p {
   font-size: 1em;
   font-weight: 400;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+.list {
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+@media screen and (max-width: 1100px) {
+  .list {
+    flex-direction: column;
+  }
+}
+.list .hospitals, .list .doctors {
+  width: 100%;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.list .hospitals h2, .list .doctors h2 {
+  font-weight: 400;
+}
+.list .hospitals .primary-btn, .list .doctors .primary-btn {
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.list .cards {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 6rem;
+}
+.list .cards .card {
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.list .cards .card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.list .cards .card .info .number {
+  padding: 0.4rem 1rem;
+  width: fit-content;
+  background: linear-gradient(160.22deg, #FFC444 223141.6%, #F36F56 309766.12%);
+  border-radius: 30px;
+}
+.list .cards .card .info .number p {
+  font-weight: 400;
+  color: #202122;
+}
+.list .cards .card .info .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.list .cards .card .info .text p {
+  font-weight: 400;
+}
+.list .cards .card .info .rating {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+.list .cards .card .icon {
+  max-width: 160px;
+  max-height: 190px;
+  width: 100%;
+  height: 100%;
+}
+.list .cards .card .icon img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.list .cards .card .seeMore {
+  cursor: pointer;
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  right: 0;
+}
+.list .cards .card .seeMore h3 {
+  font-size: 1em;
+}
+.list .hospitals h2 {
+  margin: 0 0 0 auto;
+}
+.list .hospitals .cards .card {
+  background: linear-gradient(344.83deg, #E38DDD 28.03%, #9571F6 116.52%);
+}
+.list .hospitals .cards .card .info .text h3, .list .hospitals .cards .card .info .text p {
+  color: rgb(255, 255, 255);
+}
+.list .hospitals .cards .card .rating {
+  color: #ffffff;
+}
+.list .doctors h2 {
+  margin: 0 auto 0 0;
+}
+.list .doctors .cards .card {
+  background: rgba(242, 247, 255, 0.6980392157);
+}
+.list .doctors .cards .card .info .text h3 {
+  max-width: 12rem;
+  font-weight: 600;
+  color: #202122;
+}
+.list .doctors .cards .card .rating {
+  color: #202122;
 }
 
 /*# sourceMappingURL=list.css.map */

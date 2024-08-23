@@ -1,7 +1,13 @@
 @import "../fonts/stylesheet.css";
+.bound {
+  width: 100%;
+  max-width: 95rem;
+  padding: 0 2rem;
+}
+
 .primary-btn {
-  margin-top: 2rem;
-  padding: 0.8rem 2rem;
+  width: fit-content;
+  padding: 0.8rem 1.4rem;
   border-radius: 6px;
   border: none;
   cursor: pointer;
@@ -36,6 +42,15 @@ p {
   font-weight: 400;
 }
 
+a {
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -45,9 +60,10 @@ p {
   font-weight: normal;
   color: #202122;
   font-family: "Graphik LCG", "sans-serif";
+  scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 420px) {
   html {
     font-size: 0.8em;
   }

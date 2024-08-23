@@ -1,14 +1,16 @@
 @import "../fonts/stylesheet.css"; // fonts
 
+$bound: 95rem;
+
 // font sizes
 $size-h1: 2.6em;
 $size-h2: 1.8em;
 $size-h3: 1.2em;
 $size-name: 1em;
-$size-undertitle: 12px;
-$size-link: 12px;
+$size-undertitle: .8em;
+$size-link: 1em;
 $size-text: 1em;
-$size-title: 18px;
+$size-title: 1.4em;
 
 
 // UI colors
@@ -29,9 +31,15 @@ $gray-dark: #353535;
 
 
 // components
+.bound{
+   width: 100%;
+   max-width: $bound;
+   padding: 0 2rem;
+}
+
 .primary-btn{
-   margin-top: 2rem;
-   padding: .8rem 2rem;
+   width: fit-content;
+   padding: .8rem 1.4rem;
 
    border-radius: 6px;
    border: none;
@@ -67,4 +75,13 @@ h3{
 p{
    font-size: $size-text;
    font-weight: 400;
+}
+a{
+   font-weight: 500;
+   text-decoration: none;
+
+   transition: all 0.2s;
+   &:hover{
+      opacity: .8;
+   }
 }

@@ -3,10 +3,12 @@
    background-color: transparent;
    .background{
       z-index: 0;
-      width: 100vw;
+      width: 100%;
+      max-width: 120rem;
       height: 20rem;
       top: 0;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       position: absolute;
       .blurs{
          span{
@@ -30,18 +32,21 @@
             box-shadow: #2EC5CE 0 0 1rem 1rem;
             background-color: #2EC5CE;
          }
-         :nth-child(2){
-            transform: scale(1.2);
-            width: 50rem;
-            height: 20rem;
-            left: -2rem;
+         :nth-child(3){
+            filter: none;
+            transform: scale(1.2) rotate(-6deg);
+            width: 100vw;
+            height: 30rem;
+            left: 0rem;
             top: -2rem;
-            box-shadow: #dadada 0 0 1rem 1rem;
-            background-color: #dadada;
+            border-radius: 0%;
+            box-shadow: #F2F7FFB2 0 0 1rem 1rem;
+            background-color: #F2F7FFB2;
          }
       }
 
       .line-first{
+         transform: scale(1.1);
          overflow-x: hidden;
          position: absolute;
          left: 0;
@@ -55,8 +60,8 @@
       }
       .line-second{
          transform: scale(1.1);
-         right: 0rem;
-         bottom: -10rem;
+         right: 2rem;
+         bottom: -14rem;
          position: absolute;
 
          width: 50rem;
@@ -66,10 +71,15 @@
             width: 100%;
          }
       }
+
+      @media screen and (max-width: 480px) {
+         .line-second, .line-first{
+            display: none;
+         }
+      }
    }
 
-   padding: 0 1rem;
-   padding-top: 6rem;
+   padding-top: 2rem;
    padding-bottom: 10rem;
 
    width: 100%;
@@ -81,12 +91,19 @@
 
    .info{
       z-index: 0;
-      display: flex;
+
       flex-grow: 1;
-      flex-wrap: wrap;
-      justify-content: space-around;
+
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 0rem;
+
+      @media screen and (max-width: 1020px) {
+         margin-top: 6rem;
+         flex-direction: column;
+         
+         text-align: center;
+      }
 
       .title{
          display: flex;
@@ -106,7 +123,7 @@
       }
 
       .icon{
-         transform: translateY(3rem);
+         transform: translateY(4rem);
          width: 100%;
          max-width: 26rem;
 

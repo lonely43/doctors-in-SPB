@@ -11,6 +11,40 @@
    <title>main</title>
 </head>
 <body>
+   <nav>
+      <ul class="links">
+         <li><a href="#doctors">Врачи</a></li>
+         <li><a href="#hospitals">Клиники</a></li>
+         <li><a href="">О рейтинге</a></li>
+         <li><a href="">Партнеры</a></li>
+      </ul>
+
+      <div class="burger-btn">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+
+      <div class="burger-menu">
+         <ul class="burger-links">
+            <li><a href="#doctors">Врачи</a></li>
+            <li><a href="#hospitals">Клиники</a></li>
+            <li><a href="">О рейтинге</a></li>
+            <li><a href="">Партнеры</a></li>
+         </ul>
+      </div>
+      <div class="blackScreen"></div>
+
+      <div class="info">
+         <div class="location">
+            <img src="public/icons/nav/Vector.svg" alt="location">
+            <p>Санкт-Петербург</p>
+         </div>
+         <div class="primary-btn">
+            Оставить заявку
+         </div>
+      </div>
+   </nav>
    <main>
       <div class="land">
          <div class="background">
@@ -27,7 +61,7 @@
             </div>
          </div>
 
-         <div class="info">
+         <div class="info bound">
             <div class="title">
                <h1> Рейтинг лучших ортодонтов <br> в Санкт-Петербурге</h1>
                <p> Выбирайте своего доктора на основе объективной оценки экспертов в ортодонтии </p>
@@ -39,53 +73,32 @@
          </div>
       </div>
 
-      <div class="list">
-         <div class="hospitals">
+      <div class="list bound">
+         <div id="hospitals" class="hospitals">
             <h2>Рейтинг клиник</h2>
 
-            <div class="cards">
+            <div class="cards"> <!-- check out './static/js/index/list.js' --> </div>
 
-               <div class="card">
-                  <div class="info">
-                     <div class="number">
-                        <p></p>
-                     </div>
-                     <div class="text">
-                        <h3></h3>
-                        <p></p>
-                     </div>
-                     <p></p>
-                  </div>
-                  <div class="icon">
-                     <img src="" alt="icon">
-                  </div>
-               </div>
-            </div>
+            <button class="primary-btn">Открыть полный рейтинг клиник</button>
          </div>
          
-         <div class="doctors">
+         <div id="doctors" class="doctors">
             <h2>Рейтинг ортодонтов</h2>
 
-            <div class="cards">
+            <div class="cards"> <!-- check out './static/js/index/list.js' --></div>
 
-               <div class="card">
-                  <div class="info">
-                     <div class="number">
-                        <p></p>
-                     </div>
-                     <div class="text">
-                        <h3></h3>
-                     </div>
-                     <p></p>
-                  </div>
-                  <div class="icon">
-                     <img src="" alt="icon">
-                  </div>
-               </div>
-
-            </div>
+            <button class="primary-btn">Открыть  полный рейтинг врачей</button>
          </div>
       </div>
+
+      <div class="centerText bound">
+         <h3>
+            Участниками рейтинга могут стать ортодонты, а также клиники Москвы и Санкт-Петербурга, отвечающие высокому уровню клинического сопровождения и сервиса. 
+         </h3>
+      </div>
    </main>
+
+   <script src="static/js/index/burgerMenu.js"></script>
+   <script src="static/js/index/list.js"></script>
 </body>
 </html>
