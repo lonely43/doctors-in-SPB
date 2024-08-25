@@ -109,11 +109,10 @@ a:hover {
 }
 .list .cards .card .info {
   width: 100%;
-  max-width: 50%;
+  max-width: calc(100% - 160px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
 }
 .list .cards .card .info .number {
   padding: 0.4rem 1rem;
