@@ -212,9 +212,6 @@ nav .content .info .location:hover {
   }
 }
 @media screen and (min-width: 900px) {
-  nav .content {
-    justify-content: space-around;
-  }
   nav .content .links {
     display: flex;
   }

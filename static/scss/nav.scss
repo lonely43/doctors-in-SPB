@@ -14,6 +14,7 @@ nav{
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       .links{
          list-style: none;
    
@@ -210,8 +211,6 @@ nav{
       }
    
       @media screen and (min-width: 900px) {
-         justify-content: space-around;
-         
          .links{
             display: flex;
          }
