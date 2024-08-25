@@ -124,6 +124,12 @@
             h3{
                font-size: 1em;
             }
+
+            transition: all 0.2s;
+
+            &:hover{
+               opacity: .8;
+            }
          }
       }
    }  

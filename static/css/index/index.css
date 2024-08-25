@@ -488,9 +488,13 @@ a:hover {
   position: absolute;
   top: calc(100% + 0.4rem);
   right: 0;
+  transition: all 0.2s;
 }
 .list .cards .card .seeMore h3 {
   font-size: 1em;
+}
+.list .cards .card .seeMore:hover {
+  opacity: 0.8;
 }
 .list .hospitals h2 {
   margin: 0 0 0 auto;
