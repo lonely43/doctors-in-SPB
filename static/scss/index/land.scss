@@ -92,7 +92,7 @@
    .info{
       z-index: 0;
 
-      flex-grow: 1;
+   
 
       display: flex;
       justify-content: space-between;
@@ -111,7 +111,7 @@
          gap: 1rem;
 
          width: 100%;
-         max-width: 32rem;
+         max-width: 33rem;
          
          h1{
             text-transform: uppercase;

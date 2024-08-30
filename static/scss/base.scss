@@ -1,16 +1,18 @@
 @import "../fonts/stylesheet.css"; // fonts
 
-$bound: 95rem;
+//max-width
+$bound: 75rem;
+
 
 // font sizes
-$size-h1: 2.6em;
-$size-h2: 1.8em;
+$size-h1: 3.015em;
+$size-h2: 1.48em;
 $size-h3: 1.2em;
-$size-name: 1em;
-$size-undertitle: .8em;
-$size-link: 1em;
-$size-text: 1em;
-$size-title: 1.4em;
+$size-text: 1.17em;
+$size-name: 1.17em;
+$size-undertitle: 1.005em;
+$size-links: 1.005em;
+$size-title: 1.5075em;
 
 
 // UI colors
@@ -41,13 +43,13 @@ $gray-dark: #353535;
    width: fit-content;
    padding: .8rem 1.4rem;
 
-   border-radius: 6px;
+   border-radius: 8px;
    border: none;
 
    cursor: pointer;
 
    text-align: center;
-   font-size: $size-text;
+   font-size: $size-undertitle;
    font-weight: 500;
 
    color: $white;
@@ -77,6 +79,7 @@ p{
    font-weight: 400;
 }
 a{
+   font-size: $size-links;
    font-weight: 500;
    text-decoration: none;
 

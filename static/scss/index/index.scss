@@ -2,9 +2,11 @@
 
 @import "../nav.scss";
 
+//blocks
 @import "land.scss";
 @import "list.scss";
 @import "centerText.scss";
+@import "description.scss";
 
 main{
    width: 100%;

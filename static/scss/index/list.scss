@@ -1,7 +1,6 @@
 @import "../base.scss";
 
 .list{
-   padding-bottom: 5rem; //del that
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -20,6 +19,7 @@
       gap: 2rem;
 
       h2{
+         text-transform: uppercase;
          font-weight: 400;
       }
 
@@ -80,7 +80,8 @@
                border-radius: 30px;
 
                p{
-                  font-weight: 400;
+                  font-size: $size-undertitle;
+                  font-weight: 500;
                   color: $text;
                }
             }
@@ -92,12 +93,18 @@
 
                p{
                   font-weight: 400;
+                  font-size: $size-undertitle;
+               }
+
+               h2{
+                  font-size: $size-name;
                }
             }
 
             .rating{
                font-family: "Jost", sans-serif;
-               font-weight: 500;
+               font-weight: 400;
+               font-size: $size-undertitle;
             }
          }
 
@@ -122,7 +129,7 @@
             right: 0;
 
             h3{
-               font-size: 1em;
+               font-size: $size-undertitle;
             }
 
             transition: all 0.2s;

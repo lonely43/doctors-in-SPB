@@ -1,0 +1,27 @@
+.description {
+  padding-top: 20rem;
+  position: relative;
+}
+.description .background {
+  position: absolute;
+}
+.description .content {
+  display: flex;
+  flex-direction: column;
+}
+.description .content .block {
+  display: flex;
+  flex-direction: column;
+}
+.description .content .block .title {
+  font-family: "Graphik LCG", "sans-serif";
+}
+.description .content .block .info .icon {
+  transform: scale(1.4);
+  max-width: 12rem;
+}
+.description .content .block .info .icon img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=description.css.map */

@@ -25,7 +25,7 @@ nav{
             position: relative;
    
             a{
-               font-size: $size-link;
+               font-size: $size-links;
             }
    
    
@@ -132,11 +132,6 @@ nav{
       
             li{
                position: relative;
-      
-               a{
-                  font-size: $size-link;
-               }
-      
       
                //undeline hover effect
                &::before{

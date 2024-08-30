@@ -1,0 +1,43 @@
+.description{
+   padding-top: 20rem;
+   position: relative;
+
+   .background{
+      position: absolute;
+   }
+
+   .content{
+      //bound
+
+      display: flex;
+      flex-direction: column;
+
+      .block{
+         display: flex;
+         flex-direction: column;
+
+         .title{
+            font-family: 'Graphik LCG', 'sans-serif';
+
+            h1{
+               
+            }
+            h3{
+
+            }
+         }
+         .info{
+            .text{
+               // exclusive pattern
+            }
+            .icon{
+               transform: scale(1.4);
+               max-width: 12rem;
+               img{
+                  width: 100%;
+               }
+            }
+         }
+      }
+   }
+}

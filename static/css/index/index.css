@@ -2,18 +2,18 @@
 @import "../fonts/stylesheet.css";
 .bound {
   width: 100%;
-  max-width: 95rem;
+  max-width: 75rem;
   padding: 0 2rem;
 }
 
 .primary-btn {
   width: fit-content;
   padding: 0.8rem 1.4rem;
-  border-radius: 6px;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.005em;
   font-weight: 500;
   color: #FFFFFF;
   background-color: #6165D7;
@@ -25,12 +25,12 @@
 
 h1 {
   font-weight: 500;
-  font-size: 2.6em;
+  font-size: 3.015em;
 }
 
 h2 {
   font-weight: 500;
-  font-size: 1.8em;
+  font-size: 1.48em;
 }
 
 h3 {
@@ -39,11 +39,12 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.17em;
   font-weight: 400;
 }
 
 a {
+  font-size: 1.005em;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s;
@@ -75,7 +76,7 @@ nav .content .links li {
   position: relative;
 }
 nav .content .links li a {
-  font-size: 1em;
+  font-size: 1.005em;
 }
 nav .content .links li::before {
   position: absolute;
@@ -152,9 +153,6 @@ nav .content .burger-menu .burger-links {
 }
 nav .content .burger-menu .burger-links li {
   position: relative;
-}
-nav .content .burger-menu .burger-links li a {
-  font-size: 1em;
 }
 nav .content .burger-menu .burger-links li::before {
   position: absolute;
@@ -303,7 +301,6 @@ nav .content .info .location:hover {
 }
 .land .info {
   z-index: 0;
-  flex-grow: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -320,7 +317,7 @@ nav .content .info .location:hover {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-  max-width: 32rem;
+  max-width: 33rem;
 }
 .land .info .title h1 {
   text-transform: uppercase;
@@ -337,18 +334,18 @@ nav .content .info .location:hover {
 
 .bound {
   width: 100%;
-  max-width: 95rem;
+  max-width: 75rem;
   padding: 0 2rem;
 }
 
 .primary-btn {
   width: fit-content;
   padding: 0.8rem 1.4rem;
-  border-radius: 6px;
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.005em;
   font-weight: 500;
   color: #FFFFFF;
   background-color: #6165D7;
@@ -360,12 +357,12 @@ nav .content .info .location:hover {
 
 h1 {
   font-weight: 500;
-  font-size: 2.6em;
+  font-size: 3.015em;
 }
 
 h2 {
   font-weight: 500;
-  font-size: 1.8em;
+  font-size: 1.48em;
 }
 
 h3 {
@@ -374,11 +371,12 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.17em;
   font-weight: 400;
 }
 
 a {
+  font-size: 1.005em;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s;
@@ -388,7 +386,6 @@ a:hover {
 }
 
 .list {
-  padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -407,6 +404,7 @@ a:hover {
   gap: 2rem;
 }
 .list .hospitals h2, .list .doctors h2 {
+  text-transform: uppercase;
   font-weight: 400;
 }
 .list .hospitals .primary-btn, .list .doctors .primary-btn {
@@ -457,7 +455,8 @@ a:hover {
   border-radius: 30px;
 }
 .list .cards .card .info .number p {
-  font-weight: 400;
+  font-size: 1.005em;
+  font-weight: 500;
   color: #202122;
 }
 .list .cards .card .info .text {
@@ -467,10 +466,15 @@ a:hover {
 }
 .list .cards .card .info .text p {
   font-weight: 400;
+  font-size: 1.005em;
+}
+.list .cards .card .info .text h2 {
+  font-size: 1.17em;
 }
 .list .cards .card .info .rating {
   font-family: "Jost", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 1.005em;
 }
 .list .cards .card .icon {
   max-width: 160px;
@@ -492,7 +496,7 @@ a:hover {
   transition: all 0.2s;
 }
 .list .cards .card .seeMore h3 {
-  font-size: 1em;
+  font-size: 1.005em;
 }
 .list .cards .card .seeMore:hover {
   opacity: 0.8;
@@ -531,13 +535,39 @@ a:hover {
 }
 
 .centerText {
-  margin: 4rem auto !important;
-  width: 100%;
-  max-width: 43rem;
+  padding-top: 10rem;
+  margin: 0 auto !important;
   text-align: center;
+  max-width: 50rem;
 }
 .centerText h3 {
-  font-size: 1.4em;
+  font-size: 1.5075em;
+}
+
+.description {
+  padding-top: 20rem;
+  position: relative;
+}
+.description .background {
+  position: absolute;
+}
+.description .content {
+  display: flex;
+  flex-direction: column;
+}
+.description .content .block {
+  display: flex;
+  flex-direction: column;
+}
+.description .content .block .title {
+  font-family: "Graphik LCG", "sans-serif";
+}
+.description .content .block .info .icon {
+  transform: scale(1.4);
+  max-width: 12rem;
+}
+.description .content .block .info .icon img {
+  width: 100%;
 }
 
 main {
