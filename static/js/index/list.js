@@ -61,7 +61,7 @@
       `
    })
    hosCards.forEach(el => {
-      document.querySelector(".list .hospitals .cards").innerHTML += el
+      document.querySelector(".listBlock .hospitals .cards").innerHTML += el
    })
 }
 
@@ -122,6 +122,6 @@
       `
    })
    cards.forEach(el => {
-      document.querySelector(".list .doctors .cards").innerHTML += el
+      document.querySelector(".listBlock .doctors .cards").innerHTML += el
    })   
 }

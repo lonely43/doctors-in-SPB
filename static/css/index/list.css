@@ -52,33 +52,33 @@ a:hover {
   opacity: 0.8;
 }
 
-.list {
+.listBlock {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 6rem;
 }
 @media screen and (max-width: 1100px) {
-  .list {
+  .listBlock {
     flex-direction: column;
   }
 }
-.list .hospitals, .list .doctors {
+.listBlock .hospitals, .listBlock .doctors {
   width: 100%;
   max-width: 28rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.list .hospitals h2, .list .doctors h2 {
+.listBlock .hospitals h2, .listBlock .doctors h2 {
   text-transform: uppercase;
   font-weight: 400;
 }
-.list .hospitals .primary-btn, .list .doctors .primary-btn {
+.listBlock .hospitals .primary-btn, .listBlock .doctors .primary-btn {
   margin: 0 auto;
   margin-top: 4rem;
 }
-.list .cards {
+.listBlock .cards {
   width: 100%;
   display: grid;
   grid-auto-flow: row;
@@ -86,7 +86,7 @@ a:hover {
   grid-auto-rows: 1fr;
   gap: 6rem;
 }
-.list .cards .card {
+.listBlock .cards .card {
   position: relative;
   padding: 1rem;
   border-radius: 10px;
@@ -96,108 +96,108 @@ a:hover {
   gap: 2rem;
 }
 @media screen and (max-width: 360px) {
-  .list .cards .card {
+  .listBlock .cards .card {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .list .cards .card .info {
+  .listBlock .cards .card .info {
     max-width: 100% !important;
   }
-  .list .cards .card .icon {
+  .listBlock .cards .card .icon {
     max-width: 100% !important;
   }
 }
-.list .cards .card .info {
+.listBlock .cards .card .info {
   width: 100%;
   max-width: calc(100% - 160px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.list .cards .card .info .number {
+.listBlock .cards .card .info .number {
   padding: 0.4rem 1rem;
   width: fit-content;
   background: linear-gradient(160.22deg, #FFC444 223141.6%, #F36F56 309766.12%);
   border-radius: 30px;
 }
-.list .cards .card .info .number p {
+.listBlock .cards .card .info .number p {
   font-size: 1.005em;
   font-weight: 500;
   color: #202122;
 }
-.list .cards .card .info .text {
+.listBlock .cards .card .info .text {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
-.list .cards .card .info .text p {
+.listBlock .cards .card .info .text p {
   font-weight: 400;
   font-size: 1.005em;
 }
-.list .cards .card .info .text h2 {
+.listBlock .cards .card .info .text h2 {
   font-size: 1.17em;
 }
-.list .cards .card .info .rating {
+.listBlock .cards .card .info .rating {
   font-family: "Jost", sans-serif;
   font-weight: 400;
   font-size: 1.005em;
 }
-.list .cards .card .icon {
+.listBlock .cards .card .icon {
   max-width: 160px;
   max-height: 190px;
   width: 100%;
   height: 100%;
 }
-.list .cards .card .icon img {
+.listBlock .cards .card .icon img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 8px;
 }
-.list .cards .card .seeMore {
+.listBlock .cards .card .seeMore {
   cursor: pointer;
   position: absolute;
   top: calc(100% + 0.4rem);
   right: 0;
   transition: all 0.2s;
 }
-.list .cards .card .seeMore h3 {
+.listBlock .cards .card .seeMore h3 {
   font-size: 1.005em;
 }
-.list .cards .card .seeMore:hover {
+.listBlock .cards .card .seeMore:hover {
   opacity: 0.8;
 }
-.list .hospitals h2 {
+.listBlock .hospitals h2 {
   margin: 0 0 0 auto;
 }
-.list .hospitals .cards .card {
+.listBlock .hospitals .cards .card {
   background: linear-gradient(344.83deg, #E38DDD 28.03%, #9571F6 116.52%);
 }
-.list .hospitals .cards .card .info .text h3, .list .hospitals .cards .card .info .text p {
+.listBlock .hospitals .cards .card .info .text h3, .listBlock .hospitals .cards .card .info .text p {
   color: rgb(255, 255, 255);
 }
-.list .hospitals .cards .card .icon img {
+.listBlock .hospitals .cards .card .icon img {
   object-position: center;
 }
-.list .hospitals .cards .card .rating {
+.listBlock .hospitals .cards .card .rating {
   color: #ffffff;
 }
-.list .doctors h2 {
+.listBlock .doctors h2 {
   margin: 0 auto 0 0;
 }
-.list .doctors .cards .card {
+.listBlock .doctors .cards .card {
   background: rgba(242, 247, 255, 0.6980392157);
 }
-.list .doctors .cards .card .info .text h3 {
+.listBlock .doctors .cards .card .info .text h3 {
   max-width: 12rem;
   font-weight: 600;
   color: #202122;
 }
-.list .doctors .cards .card .icon img {
+.listBlock .doctors .cards .card .icon img {
   object-position: top;
 }
-.list .doctors .cards .card .rating {
+.listBlock .doctors .cards .card .rating {
   color: #202122;
 }
 

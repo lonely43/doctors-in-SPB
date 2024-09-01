@@ -7,6 +7,7 @@ $bound: 75rem;
 // font sizes
 $size-h1: 3.015em;
 $size-h2: 1.48em;
+$size-h2-title: 1.92625em;
 $size-h3: 1.2em;
 $size-text: 1.17em;
 $size-name: 1.17em;
@@ -18,7 +19,7 @@ $size-title: 1.5075em;
 // UI colors
 $text: #202122; 
 
-$purple-gradient1: #E38DDD;
+$purple-gradient1: #E38DDD; //background: linear-gradient(344.83deg, $purple-gradient1 28.03%, $purple-gradient2 116.52%);
 $purple-gradient2: #9571F6;
 
 $yellow-gradient1: #FFC444;

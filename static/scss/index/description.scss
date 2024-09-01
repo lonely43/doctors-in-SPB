@@ -1,5 +1,5 @@
 .description{
-   padding-top: 20rem;
+   padding: 20rem 0;
    position: relative;
 
    .background{
@@ -9,32 +9,176 @@
    .content{
       //bound
 
+      //offset
+      .up{
+         transform: translateY(-4rem);
+      }
+      @media screen and (max-width: 1100px) {
+         .up{
+            transform: none;
+         }
+      }
+
       display: flex;
       flex-direction: column;
+      
+      @media screen and (max-width: 1000px){
+         .secondBlock, .cards{
+            padding-top: 6rem !important;
+         }
+      }
+
+      h2{
+         font-size: $size-h2-title;
+         text-transform: uppercase;
+      }
+      h3{
+         font-size: $size-title;
+      }
 
       .block{
          display: flex;
          flex-direction: column;
+         gap: 2rem;
 
          .title{
             font-family: 'Graphik LCG', 'sans-serif';
-
-            h1{
-               
-            }
-            h3{
-
-            }
          }
          .info{
+            display: flex;
+            justify-content: space-between;
+
             .text{
+               display: flex;
                // exclusive pattern
             }
             .icon{
-               transform: scale(1.4);
-               max-width: 12rem;
+               transform: scale(1.4) translateY(-4rem);
+               max-width: 70rem;
+
                img{
                   width: 100%;
+               }
+            }
+         }
+      }
+
+      .fitstBlock{
+         .title{
+            max-width: 26rem;
+            width: 100%;
+         }
+         .info{
+            gap: 4rem;
+
+            .text{
+               display: flex;
+               gap: 4rem;
+
+               p{
+                  max-width: 25rem;
+                  width: 100%;
+               }
+            }
+         }
+
+         
+         @media screen and (max-width: 1000px) {
+            .text{
+               flex-direction: column;
+            }
+            .icon{
+               transform: scale(1.4) !important;
+            }
+         }
+      }
+
+      .secondBlock{
+         gap: 4rem;
+
+         .title{
+            max-width: 38rem;
+         }
+         .info{
+            justify-content: space-evenly;
+            gap: 4rem;
+
+            .text{
+               flex-direction: column;
+               justify-content: center;
+               gap: 2rem;
+
+               width: 100%;
+               max-width: 38rem;
+            }
+
+            .icon{
+               flex-grow: 1;
+               max-width: 20rem;
+               transform: none;
+            }
+
+            @media screen and (max-width: 950px){
+               justify-content: flex-start;
+
+               .text{
+                  max-width: 25rem;
+               }
+            }
+         }
+      }
+
+      @media screen and (max-width: 780px){
+         .fitstBlock, .secondBlock{
+            align-items: center;
+            .icon{
+               display: none;
+            }
+            .title{
+               max-width: 100%;
+            }
+            .text{
+               max-width: 100% !important;
+               p{
+                  max-width: 100% !important;
+               }
+            }
+         }
+      }
+
+      .cards{
+         padding-top: 4rem;
+         width: 100%;
+         max-width: 40rem;
+
+         display: flex;
+         flex-direction: column;
+         gap: 4rem;
+
+         .title{
+            //
+         }  
+
+         .list{
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 1.6rem;
+
+            list-style: none;
+
+            li{
+               width: fit-content;
+               padding: .4rem .8rem;
+
+               background: linear-gradient(344.83deg, $purple-gradient1 28.03%, $purple-gradient2 116.52%);
+               border-radius: 1rem;
+
+               p{
+                  color: $white;
+                  font-size: $size-undertitle;
                }
             }
          }
