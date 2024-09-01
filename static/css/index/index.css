@@ -435,6 +435,7 @@ a:hover {
     align-items: center;
   }
   .listBlock .cards .card .info {
+    gap: 1rem;
     max-width: 100% !important;
   }
   .listBlock .cards .card .icon {
@@ -621,7 +622,7 @@ a:hover {
   }
 }
 .description .content .secondBlock {
-  gap: 4rem;
+  gap: 2rem;
 }
 .description .content .secondBlock .title {
   max-width: 38rem;

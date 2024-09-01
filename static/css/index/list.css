@@ -102,6 +102,7 @@ a:hover {
     align-items: center;
   }
   .listBlock .cards .card .info {
+    gap: 1rem;
     max-width: 100% !important;
   }
   .listBlock .cards .card .icon {
