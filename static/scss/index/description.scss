@@ -1,9 +1,119 @@
 .description{
    padding: 20rem 0;
+   margin-top: 6rem;
    position: relative;
+   background-color: transparent;
+   z-index: 0;
 
    .background{
+      z-index: -1;
+      width: 100%;
+      max-width: 120rem;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       position: absolute;
+
+      .line1{
+         transform: scale(1.1);
+         position: absolute;
+         left: -20rem;
+         bottom: 2rem;
+         width: 30rem;
+
+         img{
+            object-fit: cover;
+            width: 100%;
+         }
+      }
+      .line2{
+         transform: scale(1.1);
+         right: -20rem;
+         bottom: 10rem;
+         position: absolute;
+
+         width: 50rem;
+
+         img{
+            object-fit: cover;
+            width: 100%;
+         }
+      }
+      .line3{
+         transform: scale(1);
+         position: absolute;
+         left: -20rem;
+         top: 4rem;
+         width: 64rem;
+
+         img{
+            object-fit: cover;
+            width: 100%;
+         }
+      }
+      .line4{
+         transform: scale(1.4);
+         position: absolute;
+         right: -20rem;
+         top: -3.6rem;
+         width: 30rem;
+
+         img{
+            object-fit: cover;
+            width: 100%;
+         }
+      }
+
+      img{
+         z-index: -1;
+      }
+
+      .blurs{
+         z-index: -2;
+         span{
+            opacity: 60%;
+            position: absolute;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 100%;
+            filter: blur(12rem);
+         }
+         :nth-child(1){
+            transform: scale(.9);
+
+            right: 0rem;
+            top: 8rem;
+            box-shadow: #8C30F5 0 0 1rem 1rem;
+            background-color: #8C30F5;
+            filter: blur(10rem);
+         }
+         :nth-child(2){
+            transform: scale(0.4);
+            left: -6rem;
+            top: 42rem;
+            box-shadow: $primary-dark 0 0 1rem 1rem;
+            background-color: $primary-dark;
+            filter: blur(14rem);
+         }
+         :nth-child(3){
+            transform: scale(0.5);
+            right: 8rem;
+            bottom: 20rem;
+            box-shadow: #2EC5CE 0 0 1rem 1rem;
+            background-color: #2EC5CE;
+            filter: blur(14rem);
+         }
+         :nth-child(4){
+            transform: scale(0.4);
+            right: 0rem;
+            bottom: 10rem;
+            box-shadow: #893976 0 0 1rem 1rem;
+            background-color: #893976;
+            filter: blur(18rem);
+         }
+      }
+
    }
 
    .content{
