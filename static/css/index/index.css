@@ -847,6 +847,7 @@ a:hover {
 .description .content .cards .list li p {
   color: #FFFFFF;
   font-size: 1.005em;
+  font-weight: 500;
 }
 
 .bound {
@@ -902,14 +903,29 @@ a:hover {
   opacity: 0.8;
 }
 
+.expertise {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
 .expertise .info {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
 }
+@media screen and (max-width: 1150px) {
+  .expertise .info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .expertise .info .icon {
+    order: 1;
+  }
+}
 .expertise .info .icon {
+  justify-self: center;
   width: 100%;
   max-width: 24rem;
   display: flex;
@@ -936,7 +952,68 @@ a:hover {
   font-size: 1.92625em;
 }
 .expertise .info .text p {
+  max-width: 38rem;
   font-size: 1.5075em;
+}
+.expertise .list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+@media screen and (max-width: 1150px) {
+  .expertise .list {
+    flex-direction: column;
+  }
+  .expertise .list .block {
+    max-width: 32rem !important;
+  }
+}
+.expertise .list .block {
+  width: fit-content;
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.expertise .list .block:last-child {
+  max-width: 28rem;
+}
+.expertise .list .block h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.expertise .list .block ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+}
+.expertise .list .block ul li {
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(242, 247, 255, 0.6980392157);
+  border-radius: 1rem;
+}
+.expertise .list .block ul li p {
+  font-size: 1.005em;
+  font-weight: 500;
+}
+.expertise .seeMore {
+  width: 100%;
+  max-width: 57rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.expertise .seeMore h3 {
+  max-width: 32rem;
+  width: 100%;
+  font-size: 1.5075em;
+  font-weight: 500;
 }
 
 main {

@@ -1,15 +1,29 @@
 @import "../base.scss";
 
 .expertise{
+   display: flex;
+   flex-direction: column;
+   gap: 6rem;
+
    .info{
       width: 100%;
 
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
+      align-items: center;
       gap: 1rem;
 
+      @media screen and (max-width: 1150px) {
+         flex-direction: column;
+         gap: 2rem;
+         .icon{
+            order: 1;
+         }
+      }
+
       .icon{
+         justify-self: center;
+
          width: 100%;
          max-width: 24rem;
          display: flex;
@@ -40,8 +54,83 @@
             font-size: $size-h2-title;
          }
          p{
+            max-width: 38rem;
             font-size: $size-title;
          }
+      }
+   }
+
+   .list{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+     
+      width: 100%;
+
+      @media screen and (max-width: 1150px) {
+         flex-direction: column;
+
+         .block{
+            max-width: 32rem !important;
+         }
+      }
+
+      .block{
+         width: fit-content;
+         max-width: 32rem;
+         &:last-child{
+            max-width: 28rem;
+         }
+         
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+
+         h2{
+            text-transform: uppercase;
+            font-weight: 400;
+         }
+
+         ul{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: .4rem;
+   
+            list-style: none;
+   
+            li{
+               padding: .4rem .8rem;
+   
+               background-color: $gray;
+               border-radius: 1rem;
+   
+               p{
+                  font-size: $size-undertitle;
+                  font-weight: 500;
+               }
+            }
+         }
+      }
+   }
+
+   .seeMore{
+      width: 100%;
+      max-width: 57rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+
+      h3{
+         max-width: 32rem;
+         width: 100%;
+
+         font-size: $size-title;
+         font-weight: 500; 
       }
    }
 }
