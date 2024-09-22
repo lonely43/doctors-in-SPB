@@ -65,10 +65,47 @@ footer h3 {
   color: #FFFFFF;
   font-size: 1.005em;
 }
-footer p {
+footer p, footer a {
   font-weight: 400;
-  color: rgba(242, 247, 255, 0.6980392157);
+  color: #a4a4a4;
   font-size: 1.005em;
+}
+footer .list {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+footer .list .policy {
+  width: auto;
+  max-width: 21rem;
+}
+footer .list .anotherBlocks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0rem;
+}
+footer .list .anotherBlocks :nth-child(n) {
+  width: 100%;
+  max-width: 10.5rem;
+}
+footer .list div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@media screen and (max-width: 1032px) {
+  footer .list {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  footer .list .anotherBlocks {
+    gap: 2rem;
+  }
+  footer .list .policy {
+    order: 1;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */
