@@ -1,0 +1,74 @@
+@import "../fonts/stylesheet.css";
+.bound {
+  width: 100%;
+  max-width: 75rem;
+  padding: 0 2rem;
+}
+
+.primary-btn {
+  width: fit-content;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.005em;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #6165D7;
+  transition: all 0.2s;
+}
+.primary-btn:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 3.015em;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.48em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.17em;
+  font-weight: 400;
+}
+
+a {
+  font-size: 1.005em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: 6rem;
+  padding: 5em 0;
+  width: 100%;
+  background-color: #202122;
+  display: flex;
+  justify-content: center;
+}
+footer h3 {
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 1.005em;
+}
+footer p {
+  font-weight: 400;
+  color: rgba(242, 247, 255, 0.6980392157);
+  font-size: 1.005em;
+}
+
+/*# sourceMappingURL=footer.css.map */

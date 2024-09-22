@@ -1,0 +1,27 @@
+@import "./base.scss";
+
+footer{
+   margin-top: 6rem;
+
+   padding: 5em 0;
+   width: 100%;
+
+   background-color: $text;
+   h3{
+      font-weight: 400;
+      color: $white;
+      font-size: $size-undertitle;
+   }
+   p{
+      font-weight: 400;
+      color: $gray;
+      font-size: $size-undertitle;
+   }
+
+   display: flex;
+   justify-content: center;
+
+   .list{
+
+   }
+}
