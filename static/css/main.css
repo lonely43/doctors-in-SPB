@@ -74,5 +74,16 @@ a:hover {
     word-break: break-all;
   }
 }
+.loading {
+  position: fixed;
+  z-index: 9;
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #202122;
+}
 
 /*# sourceMappingURL=main.css.map */
