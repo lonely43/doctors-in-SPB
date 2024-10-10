@@ -53,4 +53,43 @@ a:hover {
   opacity: 0.8;
 }
 
-/*# sourceMappingURL=base.css.map */
+.landText {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.landText h1 {
+  text-transform: uppercase;
+}
+.landText ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+}
+.landText ul li {
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(242, 247, 255, 0.6980392157);
+  border-radius: 1rem;
+}
+.landText ul li p {
+  font-size: 1.005em;
+  font-weight: 500;
+}
+
+main {
+  padding-top: 6rem;
+  width: 100%;
+  height: fit-content;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+/*# sourceMappingURL=rating.css.map */

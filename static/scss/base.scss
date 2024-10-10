@@ -39,7 +39,9 @@ $gray-dark: #353535;
 .bound{
    width: 100%;
    max-width: $bound;
-   padding: 0 2rem;
+
+   padding-left: 2rem !important;
+   padding-right: 2rem !important;
 }
 
 .primary-btn{

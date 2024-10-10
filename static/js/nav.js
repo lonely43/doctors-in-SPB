@@ -5,7 +5,7 @@ function createNav(){
          <ul class="links">
             <li><a href="#doctors">Врачи</a></li>
             <li><a href="#hospitals">Клиники</a></li>
-            <li><a href="">О рейтинге</a></li>
+            <li><a href="./rating.html">О рейтинге</a></li>
             <li><a href="">Партнеры</a></li>
          </ul>
    
@@ -19,7 +19,7 @@ function createNav(){
             <ul class="burger-links">
                <li><a href="#doctors">Врачи</a></li>
                <li><a href="#hospitals">Клиники</a></li>
-               <li><a href="">О рейтинге</a></li>
+               <li><a href="./rating.html">О рейтинге</a></li>
                <li><a href="">Партнеры</a></li>
             </ul>
          </div>

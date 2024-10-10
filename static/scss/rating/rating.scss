@@ -1,16 +1,13 @@
 @import "../base.scss";
 
 //blocks
-@import "land.scss";
-@import "list.scss";
-@import "centerText.scss";
-@import "description.scss";
-@import "expertise.scss";
+@import "landText.scss";
 
 main{
+   padding-top: 6rem;
    width: 100%;
    height: fit-content;
-   
+   min-height: 100dvh;
    overflow-x: hidden;
 
    display: flex;

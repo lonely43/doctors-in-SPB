@@ -10,6 +10,8 @@ nav{
    display: flex;
    justify-content: center;
 
+   border-bottom: 3px solid $gray;
+
    .content{
       display: flex;
       justify-content: space-between;
