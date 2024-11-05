@@ -80,6 +80,71 @@ a:hover {
   font-weight: 500;
 }
 
+.listOfRating {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.listOfRating .mainTitle {
+  text-transform: uppercase;
+  font-size: 1.92625em;
+}
+.listOfRating .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6rem;
+}
+@media screen and (max-width: 1000px) {
+  .listOfRating .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.listOfRating .cards .card {
+  padding: 2rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: rgba(242, 247, 255, 0.6980392157);
+  color: #202122;
+  border-radius: 8px;
+}
+.listOfRating .cards .card:nth-child(1), .listOfRating .cards .card:nth-child(4), .listOfRating .cards .card:nth-child(5) {
+  background: linear-gradient(344.83deg, #E38DDD 28.03%, #9571F6 116.52%);
+}
+.listOfRating .cards .card:nth-child(1) h3, .listOfRating .cards .card:nth-child(1) p, .listOfRating .cards .card:nth-child(4) h3, .listOfRating .cards .card:nth-child(4) p, .listOfRating .cards .card:nth-child(5) h3, .listOfRating .cards .card:nth-child(5) p {
+  color: rgb(255, 255, 255);
+}
+.listOfRating .cards .card .title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.listOfRating .cards .card .title h3 {
+  font-size: 1.5075em;
+  font-weight: 400;
+}
+.listOfRating .cards .card .title h3:first-child {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.listOfRating .cards .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.listOfRating .cards .card:last-child {
+  background-color: transparent;
+}
+.listOfRating .cards .card .photo {
+  width: 100%;
+}
+.listOfRating .cards .card .photo img {
+  max-width: 100%;
+}
+
 main {
   padding-top: 6rem;
   width: 100%;

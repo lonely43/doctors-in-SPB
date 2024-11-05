@@ -1,0 +1,82 @@
+$gap: 1.2rem;
+
+.listOfRating{
+   padding-top: 4rem;
+   
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+
+   .mainTitle{
+      text-transform: uppercase;
+      font-size: $size-h2-title;
+   }
+
+   .cards{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 6rem;
+
+      //for mobile
+      @media screen and (max-width:1000px) {
+         grid-template-columns: repeat(1, 1fr);
+      }
+
+      .card{
+         padding: 2rem;
+         padding-bottom: 4rem;
+
+         display: flex;
+         flex-direction: column;
+         gap: $gap;
+
+         background-color: $gray;
+         color: $text;
+         border-radius: 8px;
+
+         &:nth-child(1),&:nth-child(4),&:nth-child(5){
+            background: linear-gradient(344.83deg, $purple-gradient1 28.03%, $purple-gradient2 116.52%);
+            h3,p{
+               color: rgb(255, 255, 255);
+            }
+         }
+
+         .title{
+            display: flex;
+            flex-direction: column;
+            gap: $gap;
+
+            h3{
+               font-size: $size-title;
+               font-weight: 400;
+
+               &:first-child{
+                  text-transform: uppercase;
+                  font-weight: 500;
+               }
+            }
+         }
+         .text{
+            display: flex;
+            flex-direction: column;
+            gap: $gap;
+
+            p{
+   
+            }
+         }
+
+         &:last-child{
+            background-color: transparent;
+         }
+         .photo{
+            width: 100%;
+   
+            img{
+               max-width: 100%;
+            }
+         }
+      }
+   }
+}
