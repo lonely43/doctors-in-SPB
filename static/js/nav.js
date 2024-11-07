@@ -3,8 +3,8 @@ function createNav(){
 `
    <div class="content bound">
          <ul class="links">
-            <li><a href="#doctors">Врачи</a></li>
-            <li><a href="#hospitals">Клиники</a></li>
+            <li><a href="./index.html#doctors">Врачи</a></li>
+            <li><a href="./index.html#hospitals">Клиники</a></li>
             <li><a href="./rating.html">О рейтинге</a></li>
             <li><a href="">Партнеры</a></li>
          </ul>
@@ -17,8 +17,8 @@ function createNav(){
    
          <div class="burger-menu">
             <ul class="burger-links">
-               <li><a href="#doctors">Врачи</a></li>
-               <li><a href="#hospitals">Клиники</a></li>
+               <li><a href="./index.html#doctors">Врачи</a></li>
+               <li><a href="./index.html#hospitals">Клиники</a></li>
                <li><a href="./rating.html">О рейтинге</a></li>
                <li><a href="">Партнеры</a></li>
             </ul>

@@ -11,8 +11,8 @@ function createFooter(){
                <div class="rating">
                   <h3>РЕЙТИНГ</h3>
                   <div class="content">
-                     <a href="">Врачи</a>
-                     <a href="">Клиники</a>
+                     <a href="./index.html#doctors">Врачи</a>
+                     <a href="./index.html#hospitals">Клиники</a>
                   </div>
                </div>
 
