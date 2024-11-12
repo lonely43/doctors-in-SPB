@@ -1,0 +1,62 @@
+.listBlock{
+   padding-top: 8rem;
+
+   display: flex;
+   flex-direction: column;
+   gap: 8rem;
+
+   .block{
+      margin-left: 0;
+
+      h3{
+         font-size: $size-title;
+         font-weight: 400;
+         text-align: center;
+      }
+
+      .list{
+         padding-top: 4rem;
+
+         display: grid;
+         grid-template-columns: 28.6rem 1fr;
+
+         @media screen and (max-width: 950px) {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+         }
+
+         ul{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            list-style: none;
+
+            li{
+               position: relative;
+               margin-left: 2rem;
+
+               ::before{
+                  $size: 10.72px;
+
+                  content: "";
+
+                  position: absolute;
+                  left: -2rem;
+                  top: calc($size / 2);
+
+                  width: $size;
+                  height: $size;
+
+                  background: linear-gradient(160.22deg, #FFC444 223141.6%, #F36F56 309766.12%);
+                  border-radius: 50%;
+               }
+            }
+
+            danger{
+               color: $red;
+            }
+         }
+      }
+   }
+}

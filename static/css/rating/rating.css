@@ -26,21 +26,25 @@
 h1 {
   font-weight: 500;
   font-size: 3.015em;
+  color: #202122;
 }
 
 h2 {
   font-weight: 500;
   font-size: 1.48em;
+  color: #202122;
 }
 
 h3 {
   font-weight: 500;
   font-size: 1.2em;
+  color: #202122;
 }
 
 p {
   font-size: 1.17em;
   font-weight: 400;
+  color: #202122;
 }
 
 a {
@@ -170,6 +174,91 @@ a:hover {
   }
   .infoBlock p {
     text-align: center;
+  }
+}
+
+.listBlock {
+  padding-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.listBlock .block {
+  margin-left: 0;
+}
+.listBlock .block h3 {
+  font-size: 1.5075em;
+  font-weight: 400;
+  text-align: center;
+}
+.listBlock .block .list {
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: 28.6rem 1fr;
+}
+@media screen and (max-width: 950px) {
+  .listBlock .block .list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+.listBlock .block .list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+.listBlock .block .list ul li {
+  position: relative;
+  margin-left: 2rem;
+}
+.listBlock .block .list ul li ::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 5.36px;
+  width: 10.72px;
+  height: 10.72px;
+  background: linear-gradient(160.22deg, #FFC444 223141.6%, #F36F56 309766.12%);
+  border-radius: 50%;
+}
+.listBlock .block .list ul danger {
+  color: #EB5757;
+}
+
+.secondInfoBlock {
+  padding: 12rem 0 4rem 0;
+  display: flex;
+  gap: 6rem;
+}
+.secondInfoBlock .title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 23rem;
+}
+.secondInfoBlock .title h2 {
+  font-size: 1.92625em;
+  text-transform: uppercase;
+}
+.secondInfoBlock .title h3 {
+  font-size: 1.5075em;
+  font-weight: 400;
+}
+.secondInfoBlock .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 35rem;
+}
+@media screen and (max-width: 1040px) {
+  .secondInfoBlock {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .secondInfoBlock .title {
+    max-width: 35rem;
   }
 }
 
