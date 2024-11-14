@@ -1,0 +1,72 @@
+@import "../fonts/stylesheet.css";
+.bound {
+  width: 100%;
+  max-width: 75rem;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+.primary-btn {
+  width: fit-content;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.005em;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #6165D7;
+  transition: all 0.2s;
+}
+.primary-btn:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 3.015em;
+  color: #202122;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.48em;
+  color: #202122;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #202122;
+}
+
+p {
+  font-size: 1.17em;
+  font-weight: 400;
+  color: #202122;
+}
+
+a {
+  font-size: 1.005em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+main {
+  padding-top: 6rem;
+  width: 100%;
+  height: fit-content;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+/*# sourceMappingURL=sponsors.css.map */

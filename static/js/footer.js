@@ -20,7 +20,7 @@ function createFooter(){
                   <h3>ИНФОРМАЦИЯ</h3>
                   <div class="content">
                      <a href="./rating.html">О рейтинге</a>
-                     <a href="">Партнеры</a>
+                     <a href="./sponsors.html">Партнеры</a>
                   </div>
                </div>
 

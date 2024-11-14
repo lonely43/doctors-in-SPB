@@ -6,7 +6,7 @@ function createNav(){
             <li><a href="./index.html#doctors">Врачи</a></li>
             <li><a href="./index.html#hospitals">Клиники</a></li>
             <li><a href="./rating.html">О рейтинге</a></li>
-            <li><a href="">Партнеры</a></li>
+            <li><a href="./sponsors.html">Партнеры</a></li>
          </ul>
    
          <div class="burger-btn">
@@ -20,7 +20,7 @@ function createNav(){
                <li><a href="./index.html#doctors">Врачи</a></li>
                <li><a href="./index.html#hospitals">Клиники</a></li>
                <li><a href="./rating.html">О рейтинге</a></li>
-               <li><a href="">Партнеры</a></li>
+               <li><a href="./sponsors.html">Партнеры</a></li>
             </ul>
          </div>
          <div class="blackScreen"></div>

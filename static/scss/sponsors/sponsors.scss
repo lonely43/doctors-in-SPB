@@ -1,0 +1,17 @@
+@import "../base.scss";
+
+//blocks
+
+main{
+   padding-top: 6rem;
+   width: 100%;
+   height: fit-content;
+   min-height: 100dvh;
+   overflow-x: hidden;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   background-color: $white;
+}
