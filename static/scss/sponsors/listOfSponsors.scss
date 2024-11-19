@@ -1,0 +1,30 @@
+.listOfSponsors{
+   padding-top: 12rem;
+
+   display: flex;
+   flex-direction: column;
+   gap: 6rem;
+
+   .title{
+      h3{
+         font-size: $size-h2-title;
+         text-transform: uppercase;
+      }
+   }
+
+   .icons{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6rem;
+      flex-wrap: wrap;
+
+      .icon{
+         max-width: 400px;
+         img{
+            width: 100%;
+         }
+      }
+   }
+}

@@ -1,0 +1,95 @@
+.experts{
+   padding-top: 6rem;
+
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+
+   .title{
+      h2{
+         font-size: $size-h2-title;
+      }
+   }
+
+   .cards{
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 6rem;
+
+      .card{
+         padding: 1.8rem;
+
+         width: 100%;
+         display: flex;
+         gap: 6rem;
+
+         background-color: $gray;
+         border-radius: 8px;
+
+         &:last-child{
+            .icon{
+               order: 1;
+            }
+         }
+
+         .icon{
+            max-width: 25rem;
+            border-radius: 8px;
+
+            img{
+               object-fit: cover;
+               width: 100%;
+            }
+         }
+
+         .content{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .info{
+               display: flex;
+               flex-direction: column;
+               gap: .6rem;
+
+               h3{
+                  font-size: $size-title;
+                  text-transform: uppercase;
+               }
+
+               h4{
+                  font-size: $size-title;
+                  font-weight: 400;
+               }
+            }
+
+            .text{
+               display: flex;
+               flex-direction: column;
+               gap: 1rem;
+
+               p{
+                  width: 100%;
+                  max-width: 30rem;
+               }
+            }
+         }
+      }
+   }
+
+   @media screen and (max-width: 1100px) {
+      .title{
+         margin: 0 auto;
+      }
+      .cards{
+         .card{
+            margin: 0 auto;
+            width: fit-content;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+         }
+      }
+   }
+}

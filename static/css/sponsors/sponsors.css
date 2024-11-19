@@ -57,6 +57,115 @@ a:hover {
   opacity: 0.8;
 }
 
+.landText {
+  padding-top: 4rem;
+}
+.landText h1 {
+  margin: 0 auto;
+  max-width: 50rem;
+  text-align: center;
+  font-size: 3.015em;
+}
+
+.experts {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.experts .title h2 {
+  font-size: 1.92625em;
+}
+.experts .cards {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 6rem;
+}
+.experts .cards .card {
+  padding: 1.8rem;
+  width: 100%;
+  display: flex;
+  gap: 6rem;
+  background-color: rgba(242, 247, 255, 0.6980392157);
+  border-radius: 8px;
+}
+.experts .cards .card:last-child .icon {
+  order: 1;
+}
+.experts .cards .card .icon {
+  max-width: 25rem;
+  border-radius: 8px;
+}
+.experts .cards .card .icon img {
+  object-fit: cover;
+  width: 100%;
+}
+.experts .cards .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.experts .cards .card .content .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.experts .cards .card .content .info h3 {
+  font-size: 1.5075em;
+  text-transform: uppercase;
+}
+.experts .cards .card .content .info h4 {
+  font-size: 1.5075em;
+  font-weight: 400;
+}
+.experts .cards .card .content .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.experts .cards .card .content .text p {
+  width: 100%;
+  max-width: 30rem;
+}
+@media screen and (max-width: 1100px) {
+  .experts .title {
+    margin: 0 auto;
+  }
+  .experts .cards .card {
+    margin: 0 auto;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.listOfSponsors {
+  padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+.listOfSponsors .title h3 {
+  font-size: 1.92625em;
+  text-transform: uppercase;
+}
+.listOfSponsors .icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+.listOfSponsors .icons .icon {
+  max-width: 400px;
+}
+.listOfSponsors .icons .icon img {
+  width: 100%;
+}
+
 main {
   padding-top: 6rem;
   width: 100%;
