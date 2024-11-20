@@ -99,6 +99,7 @@ a:hover {
 .experts .cards .card .icon img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .experts .cards .card .content {
   display: flex;
