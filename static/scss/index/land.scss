@@ -46,6 +46,7 @@
       }
 
       .line-first{
+         opacity: 0; //gsap
          transform: scale(1.1);
          overflow-x: hidden;
          position: absolute;
@@ -59,6 +60,7 @@
          }
       }
       .line-second{
+         opacity: 0; //gsap
          transform: scale(1.1);
          right: 2rem;
          bottom: -14rem;
@@ -104,6 +106,7 @@
       }
 
       .title{
+         opacity: 0; //gsap
          display: flex;
          flex-direction: column;
          gap: 1rem;
@@ -121,6 +124,7 @@
       }
 
       .icon{
+         opacity: 0; //gsap
          transform: translateY(4rem);
          width: 100%;
          max-width: 26rem;

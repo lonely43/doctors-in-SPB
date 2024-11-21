@@ -173,7 +173,7 @@
          }
       }
 
-      .fitstBlock{
+      .firstBlock{
          .title{
             max-width: 26rem;
             width: 100%;
@@ -239,7 +239,7 @@
       }
 
       @media screen and (max-width: 780px){
-         .fitstBlock, .secondBlock{
+         .firstBlock, .secondBlock{
             align-items: center;
             .icon{
                display: none;

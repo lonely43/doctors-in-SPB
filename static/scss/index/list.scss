@@ -39,6 +39,7 @@
       gap: 6rem;
 
       .card{
+         opacity: 0; //gsap
          position: relative;
 
          padding: 1rem;
