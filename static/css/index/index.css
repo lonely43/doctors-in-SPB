@@ -255,6 +255,7 @@ a:hover {
   gap: 2rem;
 }
 .listBlock .hospitals h2, .listBlock .doctors h2 {
+  opacity: 0;
   text-transform: uppercase;
   font-weight: 400;
 }
