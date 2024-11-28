@@ -47,13 +47,16 @@ gsap.fromTo(".land .icon", {
 let h2s = gsap.utils.toArray(".listBlock h2")
 
 h2s.forEach((el)=>{
-   gsap.from(el, {
+   gsap.fromTo(el, {
       opacity: 0,
+   }, {
+      opacity: 1,
       ease: "power4.out",
       scrollTrigger:{
          trigger: el,
          scrub: true,
-         start: "center center",
+         start: "center 65%",
+         end: "center 50%"
       }
    })
 })
