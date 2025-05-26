@@ -46,7 +46,7 @@ function burgerMenu(){
       blackScreenAnim(document.querySelector("nav .burger-btn").classList.contains("opened"))
    } ,false)
    
-   function blackScreenAnim(state){ // staye = true/false
+   function blackScreenAnim(state){
       let screen = document.querySelector("nav .blackScreen")
    
       if(state){
